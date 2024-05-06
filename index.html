@@ -4,93 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Griffin's Website</title>
     <style>
-        body {
+        #content {
+            width: 60%;
             background-color: burlywood;
+            margin: auto;
+            border: 2px solid black;
+            padding: 5px;
         }
 
         h1 {
             text-align: center;
         }
 
-        #content {
-            background-color: aqua;
-            margin: auto;
-            width: 75%;
+        .smallBox {
+            text-align: center;
+            padding: 5px;
+        }
+
+        #bigBox {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .smallContainer {
+            border: 2px solid black;
             padding: 10px;
-            border-radius: 10px;
+            margin: 2px;
+            background-color: firebrick;
         }
 
         #bigContainer {
-            background-color: rgb(128, 255, 255);
             display: flex;
-            justify-content: space-evenly;
-            padding: 10px;
-            border-radius: 10px;
         }
 
-        #smallContainer {
-            width: 40%;
+        #bigImg {
+            display: flex;
         }
 
-        .smallBox {
-            background-color: grey;
-            margin: 10px;
-            padding: 4px;
-        }
-
-        .bigBox {
-            background-color: grey;
-            margin: 10px;
-            width: 40%;
-            padding: 4px;
-        }
-
-        .allBoxes {
-            border: 1px solid black;
-            box-shadow: 5px 5px 1px black;
+        img {
+            object-fit: contain;
         }
     </style>
 </head>
 
 <body>
     <div id="content">
-        <h1>Header</h1>
-        <div id="bigContainer">
-            <div id="smallContainer">
-                <div class="smallBox allBoxes">
-                    <h2>
-                        About
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, labore. Eos blanditiis
-                        cupiditate fugit dignissimos consequatur, ex mollitia voluptatibus numquam facilis earum.
-                        Voluptas voluptatibus sequi labore asperiores eligendi neque praesentium!
-                    </p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Game</h2>
-                    <p>Click <a href="game/index.html">Here</a> to play my game!
-                    </p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Images</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ratione sequi itaque soluta,
-                        veritatis cupiditate dolor similique eius in nostrum amet quisquam esse quas minus veniam autem
-                        architecto culpa dicta.</p>
-                </div>
+        <div>
+            <h1>
+                Griffin's Awesome Website
+            </h1>
+        </div>
+        <div id="bigBox">
+            <div class="smallBox">
+                <a href="About/about.html">About Me</a>
             </div>
-            <div class="bigBox allBoxes">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, ut quasi praesentium quo, nam
-                    consequatur quibusdam itaque rem harum blanditiis aut iure voluptatem, debitis asperiores id ea.
-                    Quia, qui ipsum!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum esse quos eius atque quam, libero
-                    dolore modi deserunt cupiditate illo ipsa laborum dolorum adipisci? Ad, enim. Et temporibus quaerat
-                    ratione!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque corporis, nisi deleniti iusto culpa
-                    dicta ab cupiditate. Dolore eos praesentium recusandae harum alias sed illum inventore ex cum,
-                    pariatur velit?</p>
+            <div class="smallBox">
+                <a href="Game/gettoschool5/index.html">My Game</a>
+            </div>
+        </div>
+        <div id="bigContainer">
+            <div class="smallContainer">
+                <h2>My Website</h2>
+                <p>
+                    My website is my pride and joy, a digital canvas where I pour my heart and soul into every pixel.
+                    From its striking design to its seamless user experience, I've crafted it to be a true reflection of
+                    my passion and expertise. Whether visitors are browsing through my portfolio, soaking up knowledge
+                    from my blog posts, or exploring the innovative services I offer, I aim to provide an unforgettable
+                    online journey. With every click and scroll, I aspire to leave a lasting impression, inviting
+                    visitors to delve deeper into the world I've created and discover the value and inspiration it
+                    holds.</p>
+                <img src="img/computer.png" width="200px" height="200px">
+            </div>
+            <div class="smallContainer">
+                <h2>VSCode</h2>
+                <p>
+                    VSCode is my digital sanctuary, where I dive into the world of coding with boundless enthusiasm.
+                    From its sleek interface to its powerful extensions, every aspect of this platform resonates with my
+                    passion for crafting exceptional software. Whether I'm fine-tuning intricate lines of code,
+                    debugging complex algorithms, or collaborating with fellow developers, VSCode empowers me to unleash
+                    my creativity and bring my ideas to life. With every keystroke, I'm reminded of the endless possibilities that await, making
+                    VSCode an indispensable companion on my coding journey.</p>
+                <img src="img/VSCode.png" width="200px" height="200px">
             </div>
         </div>
     </div>
